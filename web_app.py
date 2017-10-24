@@ -26,6 +26,10 @@ def system():
 def contact():
     return render_template('narrow/contact.html')
 
+@app.route('/process.html')
+def process():
+    return render_template('narrow/process.html')
+
 if __name__ == '__main__':
     HOST = '0.0.0.0' if 'PORT' in os.environ else '127.0.0.1'
     PORT = int(os.environ.get('PORT', 5000))

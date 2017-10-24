@@ -10,16 +10,24 @@ def index():
 def home():
     return render_template('narrow/index.html')
 
-@app.route('/about.html')
-def about():
-    return render_template('narrow/about.html')
+@app.route('/goals.html')
+def goals():
+    return render_template('narrow/goals.html')
 
 @app.route('/blog.html')
 def blog():
     return render_template('narrow/blog.html')
 
+@app.route('/system.html')
+def system():
+    return render_template('narrow/system.html')
+
+@app.route('/contact.html')
+def contact():
+    return render_template('narrow/contact.html')
+
 if __name__ == '__main__':
-    #HOST = '0.0.0.0' if 'PORT' in os.environ else '127.0.0.1'
-    #PORT = int(os.environ.get('PORT', 5000))
-    #app.run(host=HOST, port=PORT)
-    app.run()
+    HOST = '0.0.0.0' if 'PORT' in os.environ else '127.0.0.1'
+    PORT = int(os.environ.get('PORT', 5000))
+    app.run(host=HOST, port=PORT)
+    #app.run()

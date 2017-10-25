@@ -7,27 +7,23 @@ app = Flask(__name__)
 def index():
     return render_template('narrow/index.html')
 
-@app.route('/index.html')
-def home():
-    return render_template('narrow/index.html')
-
-@app.route('/goals.html')
+@app.route('/goals/')
 def goals():
     return render_template('narrow/goals.html')
 
-@app.route('/blog.html')
+@app.route('/blog/')
 def blog():
     return render_template('narrow/blog.html')
 
-@app.route('/system.html')
+@app.route('/system/')
 def system():
     return render_template('narrow/system.html')
 
-@app.route('/contact.html')
+@app.route('/contact/')
 def contact():
     return render_template('narrow/contact.html')
 
-@app.route('/process.html')
+@app.route('/process/')
 def process():
     return render_template('narrow/process.html')
 

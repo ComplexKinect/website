@@ -63,7 +63,7 @@
 		</header>
 		<!-- END: header -->
 		<div id="fh5co-intro-section" class="section-overlay animate-box" data-animate-effect="fadeIn">
-			<div class="fh5co-intro-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/sprint1.JPG);">
+			<div class="fh5co-intro-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/sprint1_better.png);">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 float-overlay">
@@ -97,6 +97,8 @@
 								<div class="holder-section">
 									<h3>Sound Processing</h3>
 									<p>For this sprint, the software team worked on recording audio using a computer microphone and processing the sound waves. We learned about using threading so that we were able to record and process the sound waves simultaneously. We determined which frequency was most abundant in the previous few seconds and sent a value to serial corresponding to which frequency the microphone had just heard.</p>
+									<img src="images/sound_magfreq.png" width="300" height="220">
+
 								</div>
 							</div>
 						</div>
@@ -107,6 +109,7 @@
 								<div class="holder-section">
 									<h3>Integrated System</h3>
 									<p>The integrated system for this sprint consisted of a laser cut box structure with 4 hanging shapes attached to motors. The 4 shapes would move up and down according to the frequency of sound in the enviroment. We collected sound sensor data with the laptop microphone and connected it to our structure so a specific motor would move depending on the range of the maximum frequency from the previous few seconds.</p>
+									<img src="images/sprint1_better.png" width="200" height="200">
 								</div>
 							</div>
 						</div>
@@ -117,6 +120,9 @@
 								<div class="holder-section">
 									<h3>Mechanical Progress</h3>
 									<p>During this sprint our team decided to pivot to a mechanical design with a structure that would open and close instead of shapes that would move up and down. Due to this pivot, we spent some time working on a structure that opened and closed in addition to making progress on our integrated system. We were able to design and build such a structure that worked but was overdesigned and large.</p>
+									<img src="images/openclose.JPG" width="300" height="150">
+
+
 								</div>
 							</div>
 						</div>
@@ -127,6 +133,8 @@
 								<div class="holder-section">
 									<h3>Sprint 2 Goals</h3>
 									<p>Our goals for sprint 2 were to have a grid of nodes that expand and contract using servos in reaction to a person walking through which we planned to detect using computer vision. We also had the goal of expanding in later sprints to incorporate bird movement using a cellular automata model.</p>
+									<img src="images/goals.jpg" width="300" height="200">
+
 								</div>
 							</div>
 						</div>
@@ -135,19 +143,108 @@
 				</div>
 			</div>
 		</div>
+		<div id="fh5co-section">
+			<div class="container">
+				<div class="row">
+							<div class="fh5co-inner fh5co-services">
+								<div class="holder-section">
+									<center><iframe src="" width="550" height="390" align="center"></iframe></center>
+								</div>
+							</div>
+					</div>
+				</div>
+		</div>
 		<div id="fh5co-intro-section" class="section-overlay animate-box" data-animate-effect="fadeIn">
 			<div class="fh5co-intro-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/sprint2.JPG);">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 float-overlay">
 							<h2>Sprint 2</h2>
-							<h3>During our second sprint we created a 3x3 matrix of nodes which open and close based on wheter motion is sensed
-							in one of 3 sections. We sensed motion using OpenCV and were able to get our code integrated and working on a
-							raspberry pi with a raspi camera.</h3>
 						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+		<div id="fh5co-section">
+			<div class="container">
+				<div class="row">
+							<div class="fh5co-inner fh5co-services">
+								<div class="holder-section">
+									<p>During our second sprint we created a 3x3 matrix of nodes which open and close based on wheter motion is sensed
+									in one of 3 sections. We sensed motion using OpenCV and were able to get our code integrated and working on a
+									raspberry pi with a raspi camera.</p>
+								</div>
+							</div>
+					</div>
+				</div>
+		</div>
+		<div id="fh5co-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+
+						<div class="col-md-6 animate-box">
+							<div class="fh5co-inner fh5co-services">
+								<i class="icon-gears"></i>
+								<div class="holder-section">
+									<h3>Mechanical Design</h3>
+									<p>The mechanical design of our system consisted of a geared system which was able to open and close three nodes with one servo. The nodes were designed for easy opening and closing. The geared system was loosely based off the way a train works. We created a box to enclose the system for aesthetics. We included 3 servos for a total of 9 nodes in our integrated sprint deliverable.</p>
+									<img src="images/gears_cad.png" width="350" height="200">
+
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 animate-box">
+							<div class="fh5co-inner fh5co-services">
+								<i class="icon-camera"></i>
+								<div class="holder-section">
+									<h3>Motion Detection</h3>
+									<p>The software team worked on motion detection using opencv for this sprint. We wanted to be able to determine whether there was motion in one of three sections so we could specify one of the three servos to move. To detect motion, we found the difference of the current screen and the previous 2 screens. We were able to get our code working on a raspberry pi with a raspberry pi camera. We sent 1 of 3 possible values to serial to specify which servo the arduino should move.</p>
+									<img src="images/motion_detection.png" width="300" height="200">
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 animate-box">
+							<div class="fh5co-inner fh5co-services">
+								<i class="icon-code"></i>
+								<div class="holder-section">
+									<h3>Electrical Design</h3>
+									<p>We wanted to make a system that was easily scalable. To achieve this goal, we created a distributed system of Arduinos that communicate over I2C. We had a leader Arduino that communicatated and sent commands to the follower Arduino through I2C. Although we only had one follower for this sprint, this scalable design will make it easier for us when we want to scale up and add more nodes to our system.</p>
+									<img src="images/electricaldesign.png" width="300" height="250">
+
+
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 animate-box">
+							<div class="fh5co-inner fh5co-services">
+								<i class="icon-target"></i>
+								<div class="holder-section">
+									<h3>Sprint 3 Goals</h3>
+									<p>For sprint 3, we are planning on working on making the movement of our nodes smoother, probably by transitioning from servos to stepper motors. We also want to introduce LEDs which respond to sound to incorportate our software work from sprint 1 and aim to incorporate face detection and speed detection. Lastly, we want to build a shop botted frame and increase the overall aestheticism of our system.</p>
+									<img src="images/mechy_sprint2.jpg" width="250" height="250">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="fh5co-section">
+			<div class="container">
+				<div class="row">
+							<div class="fh5co-inner fh5co-services">
+								<div class="holder-section">
+									<center><iframe src="https://drive.google.com/file/d/1E1Zf7WEf04FPC5lNvlB3aFMPDncEYlqY/preview" width="550" height="390" align="center"></iframe></center>
+								</div>
+							</div>
+					</div>
+				</div>
 		</div>
 		<footer>
 			<div id="footer" class="fh5co-border-line">

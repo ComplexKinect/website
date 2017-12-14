@@ -5454,6 +5454,19 @@ a.badge:hover, a.badge:focus {
   color: inherit;
   background-color: #eeeeee;
 }
+
+.jumbotron2 {
+  /*padding-top: 30px;*/
+  /*padding-bottom: 30px;*/
+  margin-bottom: 30px;
+  background-image: url("../images/final-11.jpg");
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: inherit;
+  background-color: #eeeeee;
+}
+
 .jumbotron h1,
 .jumbotron .h1 {
   color: inherit;

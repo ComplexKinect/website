@@ -98,9 +98,9 @@
 			</div>
 		</header>
 		<!-- END: header -->
-		
+
 		<div id="fh5co-intro-section" class="section-overlay animate-box" data-animate-effect="fadeIn">
-			<div class="fh5co-intro-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/topdown.jpg);">
+			<div class="fh5co-intro-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/final-15.jpg); background-position: 0% 25%; background-size: cover; margin-bottom: 30px;">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 float-overlay">
@@ -117,11 +117,26 @@
 				<div class="row">
 					<div class="col-md-10 col-md-offset-1">
 
+						<p>Interactive art is on the rise in our current society, from visual media arts produced at the MIT Media lab to informational aesthetic displays popping up in public places. Our team took inspiration of this new movement, and developed an interactive art sculpture, meant to be visually appealing while engaging a larger audience.</p>
+						<p>We also took inspiration from the movement of birds, impressed by how they move in a flock, despite there being no distinct leader. Our sculpture thus abstractly represents how birds would move based on the motion and audio around them.</p>
+						<p>Complex Kinect is a 1 x 3 x 8 foot sculpture, that is able to stand completely on its own. It has eighteen origami structures, that are grouped by three, on a grey background. The user interfaces with the sculpture through a web application, allowing the user to engage with the sculpture in three different ways: through audio, through motion, and through a preset demonstration. If the audience choses visual, then the nodes will open and close depending on the motion in the camera. Thus as the user walks by the structure, the nodes follow his or her movement, simulation a flock of bird slowly taking off.</p>
+						<p>If the user choses audio, then the nodes will move depending on the sound in the environment. If there is a lot of noise, then the nodes will move rapidly and at the same time. If there is only a little bit of movement, then only a couple of nodes will move at that time. The last option that the user can chose is the demonstration mode, which allows the user to experience the movement of the sculpture in a pre-set demo, which shows the highlights of the sculpture, without playing on its interactive side.</p>
+
 						<div class="col-md-6 animate-box">
 							<div class="fh5co-inner fh5co-services">
-								<i class="icon-camera"></i>
+								<i class="icon-cog"></i>
 								<div class="holder-section">
-									<h3>Computer Vision</h3>
+									<a href="mechanical.html"><h3>Mechanical Design</h3></a>
+									<p>To minimize moving parts and the introduction of friction, our system uses a rack and pinion drive system and a servo motor to move a line of 3 flowers. The servo racks back and forth to move the pinions in and out of the front which moves the inner section of the flowers.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 animate-box">
+							<div class="fh5co-inner fh5co-services">
+								<i class="icon-display"></i>
+								<div class="holder-section">
+									<a href="software.html"><h3>Software</h3></a>
 									<p>Using OpenCV and a Raspberry Pi camera, our system tracks motion within the frame. Dividing the frame into quadrants corresponding to the physical apparatus of flowers, the system transmits which frame(s) have motion to the master arduino.</p>
 								</div>
 							</div>
@@ -129,30 +144,20 @@
 
 						<div class="col-md-6 animate-box">
 							<div class="fh5co-inner fh5co-services">
-								<i class="icon-gears"></i>
+								<i class="icon-power-cord"></i>
 								<div class="holder-section">
-									<h3>Mechanical Design</h3>
-									<p>To minimize moving parts and the introduction of friction, our system uses a rack and pinion drive system and a brushless motor to move a line of 3 flowers. The brushless motor provides a powerful yet near silent method of driving a continuous drive gear which travels along the rack repeatedly to drive the pinion up and down with the flower attached.</p>
+									<a href="electrical.html"><h3>Electrical</h3></a>
+									<p>In order to supply enough current to our servos, we have the microcontrollers on a separate power supply from the servos. Our electrical system is very simple with each servo requiring just power and a sense line.</p>
 								</div>
 							</div>
 						</div>
 
 						<div class="col-md-6 animate-box">
 							<div class="fh5co-inner fh5co-services">
-								<i class="icon-code"></i>
+								<i class="icon-stats-dots"></i>
 								<div class="holder-section">
-									<h3>Firmware & Electrical</h3>
-									<p>In efforts to create a lightweight, scalable architecture, our electrical system features a leader-follower deployment of arduinos and an I2C communication bus to transmit data between them. The leader, or head node, receives serial commands from the Raspberry Pi, processes which follower node needs to act, and transmits that message to the leader node. The leader node then drives the motors to move the correct line according to the message it received.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-6 animate-box">
-							<div class="fh5co-inner fh5co-services">
-								<i class="icon-laptop"></i>
-								<div class="holder-section">
-									<h3>Web App</h3>
-									<p>To add an extra layer of interactivity, our system features a web app that allows the user to select which sensing type they want to use and how they want the system to respond. We give them the option of using audio, vision, or both to gather sensory data and give them the option to turn on and off light response as another output source.</p>
+									<a href="financial.html"><h3>Financial</h3></a>
+									<p>In order to accurately track our expenses with transparency, we’ve included a break down of all the components used for this project. We outline where we got some of our sources and you can see how much the whole thing cost to make.</p>
 								</div>
 							</div>
 						</div>

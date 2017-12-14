@@ -5444,9 +5444,13 @@ a.badge:hover, a.badge:focus {
 }
 
 .jumbotron {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  /*padding-top: 30px;*/
+  /*padding-bottom: 30px;*/
   margin-bottom: 30px;
+  background-image: url("../images/final-1.jpg");
+  background-position: 0% 25%;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: inherit;
   background-color: #eeeeee;
 }

@@ -1,0 +1,226 @@
+<!--Originally the "services" page I think (twas the template for system.html)>
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Complex Kinect &mdash; An Interdisciplinary Engineering Endeavor</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body>
+	<div class="box-wrap">
+		<header role="banner" id="fh5co-header">
+			<div class="container">
+				<nav class="navbar navbar-default">
+					<div class="row">
+						<div class="col-md-3">
+							<div class="fh5co-navbar-brand">
+								<a class="fh5co-logo" href="index.html">Complex Kinect</a>
+							</div>
+						</div>
+						<div class="col-md-9 main-nav">
+							<ul class="nav text-right">
+								<div class='dropdown'>
+									<li><a href="index.html"><span>Home</span></a></li>
+								</div>
+
+								<div class="dropdown">
+									<li><a href="system_overview.html">The System</a></li>
+									<div class="dropdown-content">
+									    <a href="mechanical.html">Mechanical</a>
+									    <a href="software.html">Software</a>
+									    <a href="electrical.html">Electrical</a>
+									    <a href="financial.html">Financial</a>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<li class="active"><a href="process_overview.html">An Iterative Process</a></li>
+									<div class="dropdown-content">
+									    <a href="sprint1.html">Sprint 1</a>
+									    <a href="sprint2.html">Sprint 2</a>
+									    <a href="sprint3.html">Sprint 3</a>
+									    <a href="sprint4.html">Sprint 4</a>
+									</div>
+								</div>
+
+								<div class="dropdown">
+								<li><a href="growth_overview.html">Team Growth</a></li>
+								<div class="dropdown-content">
+									    <a href="team_learning.html">Team Learning</a>
+									    <a href="individual_learning.html">Individual Learning</a>
+									</div>
+								</div>
+
+								<div class="dropdown">
+									<li><a href="aboutus.html">About Us</a></li>
+								</div>
+
+								<div class="dropdown">
+									<li><a href="blog.html">Blog</a></li>
+								</div>
+
+							</ul>
+						</div>
+					</div>
+				</nav>
+		  </div>
+		</header>
+		<!-- END: header -->
+		<div id="fh5co-intro-section" class="section-overlay animate-box" data-animate-effect="fadeIn">
+			<div class="fh5co-intro-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/sprint1_better.png);">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 float-overlay">
+							<h2>Sprint 1</h2>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="fh5co-section">
+			<div class="container">
+				<div class="row">
+							<div class="fh5co-inner fh5co-services">
+								<div class="holder-section">
+									<p>During our first sprint we created a small structure with hanging objects that are moved up and down based
+									the frequency of sound observed in the previous few seconds. We also decided during this sprint that we wanted
+									to pivot to building a structure with nodes that open and close based on movement instead of sound.</p>
+								</div>
+							</div>
+					</div>
+				</div>
+		</div>
+		<div id="fh5co-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+
+						<div class="col-md-6 animate-box">
+							<div class="fh5co-inner fh5co-services">
+								<i class="icon-microphone"></i>
+								<div class="holder-section">
+									<h3>Sound Processing</h3>
+									<p>For this sprint, the software team worked on recording audio using a computer microphone and processing the sound waves. We learned about using threading so that we were able to record and process the sound waves simultaneously. We determined which frequency was most abundant in the previous few seconds and sent a value to serial corresponding to which frequency the microphone had just heard.</p>
+									<img src="images/sound_magfreq.png" width="300" height="220">
+
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 animate-box">
+							<div class="fh5co-inner fh5co-services">
+								<i class="icon-classic-computer"></i>
+								<div class="holder-section">
+									<h3>Integrated System</h3>
+									<p>The integrated system for this sprint consisted of a laser cut box structure with 4 hanging shapes attached to motors. The 4 shapes would move up and down according to the frequency of sound in the enviroment. We collected sound sensor data with the laptop microphone and connected it to our structure so a specific motor would move depending on the range of the maximum frequency from the previous few seconds.</p>
+									<img src="images/sprint1_better.png" width="200" height="200">
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 animate-box">
+							<div class="fh5co-inner fh5co-services">
+								<i class="icon-gears"></i>
+								<div class="holder-section">
+									<h3>Mechanical Progress</h3>
+									<p>During this sprint our team decided to pivot to a mechanical design with a structure that would open and close instead of shapes that would move up and down. Due to this pivot, we spent some time working on a structure that opened and closed in addition to making progress on our integrated system. We were able to design and build such a structure that worked but was overdesigned and large.</p>
+									<img src="images/openclose.JPG" width="300" height="150">
+
+
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 animate-box">
+							<div class="fh5co-inner fh5co-services">
+								<i class="icon-target"></i>
+								<div class="holder-section">
+									<h3>Sprint 2 Goals</h3>
+									<p>Our goals for sprint 2 were to have a grid of nodes that expand and contract using servos in reaction to a person walking through which we planned to detect using computer vision. We also had the goal of expanding in later sprints to incorporate bird movement using a cellular automata model.</p>
+									<img src="images/goals.jpg" width="300" height="200">
+
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="fh5co-section">
+			<div class="container">
+				<div class="row">
+							<div class="fh5co-inner fh5co-services">
+								<div class="holder-section">
+									<center><iframe src="https://drive.google.com/file/d/1BeWA5D4ywaBfwFADuMhSe5HH5JRH39yKtQ/preview" width="550" height="390" align="center"></iframe></center>
+								</div>
+							</div>
+					</div>
+				</div>
+		</div>
+		<footer>
+			<div id="footer" class="fh5co-border-line">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-3 text-center">
+							<p>&copy 2017 ComplexKinect. All Rights Reserved. <br>Template made with <i class="icon-heart3 love"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a></p>
+							<p class="fh5co-social-icons">
+								<a href="https://github.com/ComplexKinect" target="_blank"><i class="icon-github-with-circle"></i></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- END: box-wrap -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Owl carousel -->
+		<script src="js/owl.carousel.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Parallax Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+
+	<!-- Main JS (Do not remove) -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>

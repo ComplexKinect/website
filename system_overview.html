@@ -8,11 +8,15 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Complex Kinect &mdash; An Interdisciplinary Engineering Endeavor</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
 
 	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 	<link rel="shortcut icon" href="favicon.ico">
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -47,12 +51,13 @@
 						</div>
 						<div class="col-md-9 main-nav">
 							<ul class="nav text-right">
+
 								<div class='dropdown'>
 									<li><a href="index.html"><span>Home</span></a></li>
 								</div>
 
 								<div class="dropdown">
-									<li><a href="system_overview.html">The System</a></li>
+									<li class="active"><a href="system_overview.html">The System</a></li>
 									<div class="dropdown-content">
 									    <a href="mechanical.html">Mechanical</a>
 									    <a href="software.html">Software</a>
@@ -83,25 +88,83 @@
 								</div>
 
 								<div class="dropdown">
-									<li class="active"><a href="blog.html">Blog</a></li>
+									<li><a href="blog.html">Blog</a></li>
 								</div>
-
 							</ul>
 						</div>
 					</div>
 				</nav>
-		  </div>
+			</div>
 		</header>
 		<!-- END: header -->
-		<iframe src ="https://complexkinect.blogspot.com/" width="100%" height="2000">
-			<p>Your browser does not support iFrames.</p>
-		</iframe>
+		
+		<div id="fh5co-intro-section" class="section-overlay animate-box" data-animate-effect="fadeIn">
+			<div class="fh5co-intro-cover text-center" data-stellar-background-ratio="0.5" style="background-image: url(images/topdown.jpg);">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 float-overlay">
+							<h2>The System</h2>
+							<h3>A distributed electrical and firmware system that allows for expandability and a compact, efficient mechanical design that minimizes parts for better functioning.</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END fh5co-intro-section -->
+		<div id="fh5co-section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
 
+						<div class="col-md-6 animate-box">
+							<div class="fh5co-inner fh5co-services">
+								<i class="icon-camera"></i>
+								<div class="holder-section">
+									<h3>Computer Vision</h3>
+									<p>Using OpenCV and a Raspberry Pi camera, our system tracks motion within the frame. Dividing the frame into quadrants corresponding to the physical apparatus of flowers, the system transmits which frame(s) have motion to the master arduino.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 animate-box">
+							<div class="fh5co-inner fh5co-services">
+								<i class="icon-gears"></i>
+								<div class="holder-section">
+									<h3>Mechanical Design</h3>
+									<p>To minimize moving parts and the introduction of friction, our system uses a rack and pinion drive system and a brushless motor to move a line of 3 flowers. The brushless motor provides a powerful yet near silent method of driving a continuous drive gear which travels along the rack repeatedly to drive the pinion up and down with the flower attached.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 animate-box">
+							<div class="fh5co-inner fh5co-services">
+								<i class="icon-code"></i>
+								<div class="holder-section">
+									<h3>Firmware & Electrical</h3>
+									<p>In efforts to create a lightweight, scalable architecture, our electrical system features a leader-follower deployment of arduinos and an I2C communication bus to transmit data between them. The leader, or head node, receives serial commands from the Raspberry Pi, processes which follower node needs to act, and transmits that message to the leader node. The leader node then drives the motors to move the correct line according to the message it received.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 animate-box">
+							<div class="fh5co-inner fh5co-services">
+								<i class="icon-laptop"></i>
+								<div class="holder-section">
+									<h3>Web App</h3>
+									<p>To add an extra layer of interactivity, our system features a web app that allows the user to select which sensing type they want to use and how they want the system to respond. We give them the option of using audio, vision, or both to gather sensory data and give them the option to turn on and off light response as another output source.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
 		<footer>
 			<div id="footer" class="fh5co-border-line">
 				<div class="container">
 					<div class="row">
-						<<div class="col-md-6 col-md-offset-3 text-center">
+						<div class="col-md-6 col-md-offset-3 text-center">
 							<p>&copy 2017 ComplexKinect. All Rights Reserved. <br>Template made with <i class="icon-heart3 love"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a></p>
 							<p class="fh5co-social-icons">
 								<a href="https://github.com/ComplexKinect" target="_blank"><i class="icon-github-with-circle"></i></a>
@@ -113,6 +176,7 @@
 		</footer>
 	</div>
 	<!-- END: box-wrap -->
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
